@@ -8,9 +8,15 @@
 
 #import "ViewController.hh"
 
+
+#import <string>
+
 #import <opencv2/highgui/cap_ios.h>
 #import <opencv2/core/core_c.h>
 #import <opencv2/opencv.hpp>
+
+#import "UIDDrawingViewController.h"
+
 
 using namespace cv;
 
@@ -32,6 +38,15 @@ using namespace cv;
   self.videoCamera.defaultFPS = 30;
   self.videoCamera.grayscaleMode = NO;
   self.videoCamera.delegate = self;
+  
+  UIDDrawingViewController *drawingOverlayVC = [UIDDrawingViewController new];
+  [self addChildViewController:drawingOverlayVC];
+  [drawingOverlayVC.view setAutoresizingMask:UIViewAutoresizingFlexibleHeight |
+                                             UIViewAutoresizingFlexibleWidth];
+  [self.view addSubview:drawingOverlayVC.view];
+  drawingOverlayVC.view.backgroundColor = [UIColor redColor];
+  drawingOverlayVC.view.alpha = 0.5;
+  
 }
 
 - (void)didReceiveMemoryWarning {

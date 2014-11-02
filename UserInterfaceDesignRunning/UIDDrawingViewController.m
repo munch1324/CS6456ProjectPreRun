@@ -11,6 +11,7 @@
 @interface UIDDrawingViewController () {
   __weak UITouch *_trackedTouch;
   NSMutableArray *_touchedAreas;
+  UIView *_someView;
 }
 
 @end
@@ -20,6 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+  _someView = [UIView new];
+  _someView.translatesAutoresizingMaskIntoConstraints = NO;
+  _someView.frame = CGRectMake(0, 0, 50, 50);
+  _someView.backgroundColor = [UIColor blueColor];
+  [self.view addSubview:_someView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,15 +49,20 @@
 
 #pragma mark - UIResponder Touch Methods
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-  
+  NSLog(@"Began");
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-  
+  NSLog(@"Moved");
+  UITouch *touch = [touches anyObject];
+  CGRect oldFrame = _someView.frame;
+  oldFrame.origin = [touch locationInView:self.view];
+  _someView.frame = oldFrame;
+//  [self.view setNeedsDisplay];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-  
+   NSLog(@"Ended");
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
