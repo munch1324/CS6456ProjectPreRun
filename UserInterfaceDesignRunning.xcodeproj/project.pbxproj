@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D3F86801A05BD26008EA957 /* UIDDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F867D1A05BD26008EA957 /* UIDDrawingViewController.m */; };
+		6D3F86811A05BD26008EA957 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F867F1A05BD26008EA957 /* ViewController.mm */; };
+		6D3F86831A05BD2E008EA957 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F86821A05BD2E008EA957 /* opencv2.framework */; };
+		6D3F86851A05BD68008EA957 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F86841A05BD68008EA957 /* Accelerate.framework */; };
+		6D3F86871A05BD6D008EA957 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F86861A05BD6D008EA957 /* AssetsLibrary.framework */; };
+		6D3F86891A05BD72008EA957 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F86881A05BD72008EA957 /* AVFoundation.framework */; };
+		6D3F868B1A05BD7B008EA957 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F868A1A05BD7B008EA957 /* CoreGraphics.framework */; };
+		6D3F868D1A05BD81008EA957 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F868C1A05BD81008EA957 /* CoreImage.framework */; };
+		6D3F868F1A05BDA0008EA957 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F868E1A05BDA0008EA957 /* CoreMedia.framework */; };
+		6D3F86911A05BDA7008EA957 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F86901A05BDA7008EA957 /* CoreVideo.framework */; };
+		6D3F86931A05BDAC008EA957 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F86921A05BDAC008EA957 /* QuartzCore.framework */; };
+		6D3F86951A05BDB2008EA957 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F86941A05BDB2008EA957 /* UIKit.framework */; };
+		6D3F86971A05BDBB008EA957 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F86961A05BDBB008EA957 /* Foundation.framework */; };
 		6DA8BC5619FBD09400334FE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8BC5519FBD09400334FE6 /* main.m */; };
 		6DA8BC5919FBD09400334FE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8BC5819FBD09400334FE6 /* AppDelegate.m */; };
 		6DA8BC5C19FBD09400334FE6 /* UserInterfaceDesignRunning.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8BC5A19FBD09400334FE6 /* UserInterfaceDesignRunning.xcdatamodeld */; };
-		6DA8BC5F19FBD09400334FE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8BC5E19FBD09400334FE6 /* ViewController.m */; };
 		6DA8BC6219FBD09400334FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8BC6019FBD09400334FE6 /* Main.storyboard */; };
 		6DA8BC6419FBD09400334FE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8BC6319FBD09400334FE6 /* Images.xcassets */; };
 		6DA8BC6719FBD09400334FE6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8BC6519FBD09400334FE6 /* LaunchScreen.xib */; };
@@ -28,14 +40,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D3F867C1A05BD26008EA957 /* UIDDrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIDDrawingViewController.h; path = UserInterfaceDesignRunning/UIDDrawingViewController.h; sourceTree = "<group>"; };
+		6D3F867D1A05BD26008EA957 /* UIDDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIDDrawingViewController.m; path = UserInterfaceDesignRunning/UIDDrawingViewController.m; sourceTree = "<group>"; };
+		6D3F867E1A05BD26008EA957 /* ViewController.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ViewController.hh; path = UserInterfaceDesignRunning/ViewController.hh; sourceTree = "<group>"; };
+		6D3F867F1A05BD26008EA957 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewController.mm; path = UserInterfaceDesignRunning/ViewController.mm; sourceTree = "<group>"; };
+		6D3F86821A05BD2E008EA957 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../OpenCV-iOS/opencv2.framework"; sourceTree = "<group>"; };
+		6D3F86841A05BD68008EA957 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		6D3F86861A05BD6D008EA957 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		6D3F86881A05BD72008EA957 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6D3F868A1A05BD7B008EA957 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6D3F868C1A05BD81008EA957 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		6D3F868E1A05BDA0008EA957 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		6D3F86901A05BDA7008EA957 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		6D3F86921A05BDAC008EA957 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6D3F86941A05BDB2008EA957 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6D3F86961A05BDBB008EA957 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6DA8BC5019FBD09400334FE6 /* UserInterfaceDesignRunning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserInterfaceDesignRunning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA8BC5419FBD09400334FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DA8BC5519FBD09400334FE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DA8BC5719FBD09400334FE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6DA8BC5819FBD09400334FE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6DA8BC5B19FBD09400334FE6 /* UserInterfaceDesignRunning.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserInterfaceDesignRunning.xcdatamodel; sourceTree = "<group>"; };
-		6DA8BC5D19FBD09400334FE6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6DA8BC5E19FBD09400334FE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6DA8BC6119FBD09400334FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DA8BC6319FBD09400334FE6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6DA8BC6619FBD09400334FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -49,6 +74,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3F86971A05BDBB008EA957 /* Foundation.framework in Frameworks */,
+				6D3F86951A05BDB2008EA957 /* UIKit.framework in Frameworks */,
+				6D3F86931A05BDAC008EA957 /* QuartzCore.framework in Frameworks */,
+				6D3F86911A05BDA7008EA957 /* CoreVideo.framework in Frameworks */,
+				6D3F868F1A05BDA0008EA957 /* CoreMedia.framework in Frameworks */,
+				6D3F868D1A05BD81008EA957 /* CoreImage.framework in Frameworks */,
+				6D3F868B1A05BD7B008EA957 /* CoreGraphics.framework in Frameworks */,
+				6D3F86891A05BD72008EA957 /* AVFoundation.framework in Frameworks */,
+				6D3F86871A05BD6D008EA957 /* AssetsLibrary.framework in Frameworks */,
+				6D3F86851A05BD68008EA957 /* Accelerate.framework in Frameworks */,
+				6D3F86831A05BD2E008EA957 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +101,21 @@
 		6DA8BC4719FBD09400334FE6 = {
 			isa = PBXGroup;
 			children = (
+				6D3F86961A05BDBB008EA957 /* Foundation.framework */,
+				6D3F86941A05BDB2008EA957 /* UIKit.framework */,
+				6D3F86921A05BDAC008EA957 /* QuartzCore.framework */,
+				6D3F86901A05BDA7008EA957 /* CoreVideo.framework */,
+				6D3F868E1A05BDA0008EA957 /* CoreMedia.framework */,
+				6D3F868C1A05BD81008EA957 /* CoreImage.framework */,
+				6D3F868A1A05BD7B008EA957 /* CoreGraphics.framework */,
+				6D3F86881A05BD72008EA957 /* AVFoundation.framework */,
+				6D3F86861A05BD6D008EA957 /* AssetsLibrary.framework */,
+				6D3F86841A05BD68008EA957 /* Accelerate.framework */,
+				6D3F86821A05BD2E008EA957 /* opencv2.framework */,
+				6D3F867C1A05BD26008EA957 /* UIDDrawingViewController.h */,
+				6D3F867D1A05BD26008EA957 /* UIDDrawingViewController.m */,
+				6D3F867E1A05BD26008EA957 /* ViewController.hh */,
+				6D3F867F1A05BD26008EA957 /* ViewController.mm */,
 				6DA8BC5219FBD09400334FE6 /* UserInterfaceDesignRunning */,
 				6DA8BC6F19FBD09400334FE6 /* UserInterfaceDesignRunningTests */,
 				6DA8BC5119FBD09400334FE6 /* Products */,
@@ -85,8 +136,6 @@
 			children = (
 				6DA8BC5719FBD09400334FE6 /* AppDelegate.h */,
 				6DA8BC5819FBD09400334FE6 /* AppDelegate.m */,
-				6DA8BC5D19FBD09400334FE6 /* ViewController.h */,
-				6DA8BC5E19FBD09400334FE6 /* ViewController.m */,
 				6DA8BC6019FBD09400334FE6 /* Main.storyboard */,
 				6DA8BC6319FBD09400334FE6 /* Images.xcassets */,
 				6DA8BC6519FBD09400334FE6 /* LaunchScreen.xib */,
@@ -224,7 +273,8 @@
 			files = (
 				6DA8BC5C19FBD09400334FE6 /* UserInterfaceDesignRunning.xcdatamodeld in Sources */,
 				6DA8BC5919FBD09400334FE6 /* AppDelegate.m in Sources */,
-				6DA8BC5F19FBD09400334FE6 /* ViewController.m in Sources */,
+				6D3F86811A05BD26008EA957 /* ViewController.mm in Sources */,
+				6D3F86801A05BD26008EA957 /* UIDDrawingViewController.m in Sources */,
 				6DA8BC5619FBD09400334FE6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +397,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ml/Google,
+					Drive/Georgia,
+					Tech,
+					MS,
+					CS/Fall,
+					"2014/CS6454/GradProject/iOSCode/OpenCV-iOS",
+				);
 				INFOPLIST_FILE = UserInterfaceDesignRunning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +416,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ml/Google,
+					Drive/Georgia,
+					Tech,
+					MS,
+					CS/Fall,
+					"2014/CS6454/GradProject/iOSCode/OpenCV-iOS",
+				);
 				INFOPLIST_FILE = UserInterfaceDesignRunning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +484,7 @@
 				6DA8BC7819FBD09400334FE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DA8BC7919FBD09400334FE6 /* Build configuration list for PBXNativeTarget "UserInterfaceDesignRunningTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +493,7 @@
 				6DA8BC7B19FBD09400334FE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
