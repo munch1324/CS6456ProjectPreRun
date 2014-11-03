@@ -10,4 +10,11 @@
 
 @interface UIDDrawingViewController : UIViewController
 
+@property (nonatomic) UIImage *baseImage;
+@property (weak, nonatomic) IBOutlet UIImageView *drawingCanvasImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *mainImage;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
+- (IBAction)erasePressed:(id)sender;
+- (IBAction)drawPressed:(id)sender;
 @end
