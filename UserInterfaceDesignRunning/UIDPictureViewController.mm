@@ -74,7 +74,7 @@ using namespace cv;
     cvtColor(myCopy, myCopy, CV_BGR2BGRA);
     [self.videoCamera stop];
     self.capturedImage = [UIDOpenCVUtilities UIImageFromCVMat:myCopy];
-    dispatch_sync(dispatch_get_main_queue(), ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
       self.capturingImageView.image = self.capturedImage;
     });
     self.isCapturing = NO;
@@ -87,11 +87,23 @@ using namespace cv;
 - (IBAction)capturePressed:(id)sender {
   if (!self.isCapturing) {
     self.isCapturing = YES;
+    [UIView animateWithDuration:0.6 animations:^{
+      self.bottomConstraint.constant = 100;
+      [self.view layoutIfNeeded];
+    }];
   }
+  self.confirmationPrompt.hidden = NO;
+  self.captureButton.hidden = YES;
 }
 
 - (IBAction)retakePressed:(id)sender {
     [self.videoCamera start];
+  [UIView animateWithDuration:0.6 animations:^{
+    self.bottomConstraint.constant = 0;
+    [self.view layoutIfNeeded];
+  }];
+  self.confirmationPrompt.hidden = YES;
+  self.captureButton.hidden = NO;
 }
 
 - (IBAction)usePressed:(id)sender {

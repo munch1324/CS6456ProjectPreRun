@@ -17,5 +17,7 @@
 - (IBAction)retakePressed:(id)sender;
 - (IBAction)usePressed:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *captureButton;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomConstraint;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "UIDOpenCVUtilities.h"
+#import <opencv2/imgproc/imgproc_c.h>
 
 @implementation UIDOpenCVUtilities
 
@@ -72,7 +73,72 @@
 
 + (UIImage *)segmentImage:(UIImage *)image
                  withMask:(UIImage *)mask {
-  UIImage *baseImage = 
+  
+  Mat cv_image = [self cvMatFromUIImage:image];
+  cv::cvtColor(cv_image , cv_image , CV_RGBA2RGB);
+  Mat cv_mask = [self cvMatFromUIImage:mask];
+
+  cv::Mat1b markers(cv_mask.rows, cv_mask.cols);
+  Mat img(cv_mask);
+  
+  markers.setTo(cv::GC_PR_BGD);
+  
+  Mat fgd_mask;
+  inRange(cv_mask, Scalar(245,245,245,245), Scalar(256,256,256,256), fgd_mask);
+  markers.setTo(GC_FGD, fgd_mask);
+
+  
+  Mat bgd_mask;
+  inRange(cv_mask, Scalar(0,0,0,245), Scalar(20,20,20,256), bgd_mask);
+  markers.setTo(GC_BGD, bgd_mask);
+  
+  Mat cv_outputImage(cv_image);
+  cv::Rect cv_boundRect(0,0,cv_image.rows,cv_image.cols);
+  cv::Mat result; // segmentation result (4 possible values)
+  cv::Mat bgModel,fgModel; // the models (internally used)
+  
+  try {
+    grabCut(cv_image,
+            markers,
+            cv_boundRect,
+            bgModel,
+            fgModel,
+            1,
+            GC_INIT_WITH_MASK);
+  }
+  catch (NSException *exception) {
+    NSLog(@"ze ze ze");
+  }
+  
+  
+//  tmp = cv_image & fgModel;
+  // let's get all foreground and possible foreground pixels
+  cv::Mat1b mask_fgpf = ( markers == cv::GC_FGD) | ( markers == cv::GC_PR_FGD);// | (markers == cv::GC_BGD);
+  // and copy all the foreground-pixels to a temporary image
+  cv::Mat3b tmp = cv::Mat3b::zeros(cv_image.rows, cv_image.cols);
+  cv_image.copyTo(tmp, mask_fgpf);
+  
+  
+  return [self UIImageFromCVMat:tmp];
+}
+
++ (UIImage *)outlinedImageFromImage:(UIImage *)sourceImage {
+  Mat cv_image = [self cvMatFromUIImage:sourceImage];
+  // Since MORPH_X : 2,3,4,5 and 6
+  
+  int morph_size = 1;
+  
+  int filterSize = 5;
+//  IplConvKernel *convKernel = cvCreateStructuringElementEx(filterSize, filterSize, (filterSize - 1) / 2, (filterSize - 1) / 2, CV_SHAPE_RECT, NULL);
+
+//  cv::morphologyEx( cv_image, cv_image, cv::MORPH_CLOSE, cv::Mat(), cv::Point(-1,-1), CV_MOP_GRADIENT );
+  threshold(cv_image, cv_image, 50, 255, CV_THRESH_TOZERO);
+  Canny(cv_image, cv_image, 140, 40);
+  
+//  cv::cvtColor(cv_image , cv_image , CV_RGB2BGRA);
+  
+  
+  return [self UIImageFromCVMat:cv_image];
 }
 
 @end

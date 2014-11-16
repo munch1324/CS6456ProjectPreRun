@@ -16,9 +16,11 @@ using namespace cv;
 @interface UIDOpenCVUtilities : NSObject
 
 + (Mat)cvMatFromUIImage:(UIImage *)image;
+
 + (UIImage *)UIImageFromCVMat:(Mat)cvMat;
 
 + (UIImage *)segmentImage:(UIImage *)image
                  withMask:(UIImage *)mask;
 
++ (UIImage *)outlinedImageFromImage:(UIImage *)sourceImage;
 @end

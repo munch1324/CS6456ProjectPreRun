@@ -17,4 +17,6 @@
 
 - (IBAction)erasePressed:(id)sender;
 - (IBAction)drawPressed:(id)sender;
+- (IBAction)segmentImagePressed:(id)sender;
+
 @end

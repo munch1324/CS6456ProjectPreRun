@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D3F86801A05BD26008EA957 /* UIDDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F867D1A05BD26008EA957 /* UIDDrawingViewController.m */; };
+		6D3F86801A05BD26008EA957 /* UIDDrawingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F867D1A05BD26008EA957 /* UIDDrawingViewController.mm */; };
 		6D3F86811A05BD26008EA957 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F867F1A05BD26008EA957 /* ViewController.mm */; };
 		6D3F86851A05BD68008EA957 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F86841A05BD68008EA957 /* Accelerate.framework */; };
 		6D3F86871A05BD6D008EA957 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3F86861A05BD6D008EA957 /* AssetsLibrary.framework */; };
@@ -25,12 +25,17 @@
 		6DA8BC6219FBD09400334FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8BC6019FBD09400334FE6 /* Main.storyboard */; };
 		6DA8BC6719FBD09400334FE6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DA8BC6519FBD09400334FE6 /* LaunchScreen.xib */; };
 		6DA8BC7319FBD09400334FE6 /* UserInterfaceDesignRunningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8BC7219FBD09400334FE6 /* UserInterfaceDesignRunningTests.m */; };
-		6DC046001A05C998004DBF64 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC045FF1A05C998004DBF64 /* opencv2.framework */; };
 		6DC046051A07F4D5004DBF64 /* UIDPictureViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DC046031A07F4D5004DBF64 /* UIDPictureViewController.mm */; };
 		6DC0460A1A07FD8A004DBF64 /* UIDOpenCVUtilities.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DC046091A07FD8A004DBF64 /* UIDOpenCVUtilities.mm */; };
 		6DC0460E1A082C89004DBF64 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DC0460D1A082C89004DBF64 /* Logo.png */; };
 		6DC046101A082CCB004DBF64 /* StartUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DC0460F1A082CCB004DBF64 /* StartUp.png */; };
 		6DC046121A082EDD004DBF64 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC046111A082EDD004DBF64 /* Images-2.xcassets */; };
+		6DC046141A085040004DBF64 /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DC046131A085040004DBF64 /* mask.png */; };
+		6DDE71B01A17B838007A0B53 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DDE71AF1A17B838007A0B53 /* opencv2.framework */; };
+		6DDE71B21A17BF08007A0B53 /* grayBaseMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DDE71B11A17BF08007A0B53 /* grayBaseMask.png */; };
+		6DDE71B41A17EE9D007A0B53 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DDE71B31A17EE9D007A0B53 /* MapKit.framework */; };
+		6DFEF3121A08774100BB5EF0 /* sampleMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DFEF3101A08774100BB5EF0 /* sampleMask.png */; };
+		6DFEF3131A08774100BB5EF0 /* sampleSeg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DFEF3111A08774100BB5EF0 /* sampleSeg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +50,7 @@
 
 /* Begin PBXFileReference section */
 		6D3F867C1A05BD26008EA957 /* UIDDrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDDrawingViewController.h; sourceTree = "<group>"; };
-		6D3F867D1A05BD26008EA957 /* UIDDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDDrawingViewController.m; sourceTree = "<group>"; };
+		6D3F867D1A05BD26008EA957 /* UIDDrawingViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIDDrawingViewController.mm; sourceTree = "<group>"; };
 		6D3F867E1A05BD26008EA957 /* ViewController.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ViewController.hh; path = UserInterfaceDesignRunning/ViewController.hh; sourceTree = "<group>"; };
 		6D3F867F1A05BD26008EA957 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewController.mm; path = UserInterfaceDesignRunning/ViewController.mm; sourceTree = "<group>"; };
 		6D3F86841A05BD68008EA957 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -69,7 +74,6 @@
 		6DA8BC6C19FBD09400334FE6 /* UserInterfaceDesignRunningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserInterfaceDesignRunningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA8BC7119FBD09400334FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DA8BC7219FBD09400334FE6 /* UserInterfaceDesignRunningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInterfaceDesignRunningTests.m; sourceTree = "<group>"; };
-		6DC045FF1A05C998004DBF64 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../OpenCV-iOS/opencv2.framework"; sourceTree = "<group>"; };
 		6DC046021A07F4D5004DBF64 /* UIDPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDPictureViewController.h; sourceTree = "<group>"; };
 		6DC046031A07F4D5004DBF64 /* UIDPictureViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIDPictureViewController.mm; sourceTree = "<group>"; };
 		6DC046081A07FD8A004DBF64 /* UIDOpenCVUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDOpenCVUtilities.h; sourceTree = "<group>"; };
@@ -77,6 +81,12 @@
 		6DC0460D1A082C89004DBF64 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = CreativeAssets/Logo.png; sourceTree = SOURCE_ROOT; };
 		6DC0460F1A082CCB004DBF64 /* StartUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StartUp.png; path = CreativeAssets/StartUp.png; sourceTree = SOURCE_ROOT; };
 		6DC046111A082EDD004DBF64 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		6DC046131A085040004DBF64 /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mask.png; path = CreativeAssets/mask.png; sourceTree = SOURCE_ROOT; };
+		6DDE71AF1A17B838007A0B53 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../OpenCV-iOS/opencv2.framework"; sourceTree = "<group>"; };
+		6DDE71B11A17BF08007A0B53 /* grayBaseMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grayBaseMask.png; path = CreativeAssets/grayBaseMask.png; sourceTree = SOURCE_ROOT; };
+		6DDE71B31A17EE9D007A0B53 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6DFEF3101A08774100BB5EF0 /* sampleMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sampleMask.png; path = CreativeAssets/sampleMask.png; sourceTree = SOURCE_ROOT; };
+		6DFEF3111A08774100BB5EF0 /* sampleSeg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sampleSeg.png; path = CreativeAssets/sampleSeg.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +104,8 @@
 				6D3F86891A05BD72008EA957 /* AVFoundation.framework in Frameworks */,
 				6D3F86871A05BD6D008EA957 /* AssetsLibrary.framework in Frameworks */,
 				6D3F86851A05BD68008EA957 /* Accelerate.framework in Frameworks */,
-				6DC046001A05C998004DBF64 /* opencv2.framework in Frameworks */,
+				6DDE71B41A17EE9D007A0B53 /* MapKit.framework in Frameworks */,
+				6DDE71B01A17B838007A0B53 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +122,8 @@
 		6DA8BC4719FBD09400334FE6 = {
 			isa = PBXGroup;
 			children = (
-				6DC045FF1A05C998004DBF64 /* opencv2.framework */,
+				6DDE71B31A17EE9D007A0B53 /* MapKit.framework */,
+				6DDE71AF1A17B838007A0B53 /* opencv2.framework */,
 				6D3F86961A05BDBB008EA957 /* Foundation.framework */,
 				6D3F86941A05BDB2008EA957 /* UIKit.framework */,
 				6D3F86921A05BDAC008EA957 /* QuartzCore.framework */,
@@ -205,7 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				6D3F867C1A05BD26008EA957 /* UIDDrawingViewController.h */,
-				6D3F867D1A05BD26008EA957 /* UIDDrawingViewController.m */,
+				6D3F867D1A05BD26008EA957 /* UIDDrawingViewController.mm */,
 			);
 			name = DrawingVC;
 			sourceTree = "<group>";
@@ -213,6 +225,10 @@
 		6DC0460C1A082C74004DBF64 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				6DDE71B11A17BF08007A0B53 /* grayBaseMask.png */,
+				6DFEF3101A08774100BB5EF0 /* sampleMask.png */,
+				6DFEF3111A08774100BB5EF0 /* sampleSeg.png */,
+				6DC046131A085040004DBF64 /* mask.png */,
 				6DC0460F1A082CCB004DBF64 /* StartUp.png */,
 				6DC0460D1A082C89004DBF64 /* Logo.png */,
 			);
@@ -268,6 +284,11 @@
 				TargetAttributes = {
 					6DA8BC4F19FBD09400334FE6 = {
 						CreatedOnToolsVersion = 6.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					6DA8BC6B19FBD09400334FE6 = {
 						CreatedOnToolsVersion = 6.0;
@@ -300,10 +321,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DC046101A082CCB004DBF64 /* StartUp.png in Resources */,
+				6DFEF3131A08774100BB5EF0 /* sampleSeg.png in Resources */,
+				6DDE71B21A17BF08007A0B53 /* grayBaseMask.png in Resources */,
+				6DFEF3121A08774100BB5EF0 /* sampleMask.png in Resources */,
 				6DC0460E1A082C89004DBF64 /* Logo.png in Resources */,
 				6DA8BC6219FBD09400334FE6 /* Main.storyboard in Resources */,
 				6DC046121A082EDD004DBF64 /* Images-2.xcassets in Resources */,
 				6DA8BC6719FBD09400334FE6 /* LaunchScreen.xib in Resources */,
+				6DC046141A085040004DBF64 /* mask.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +351,7 @@
 				6DA8BC5C19FBD09400334FE6 /* UserInterfaceDesignRunning.xcdatamodeld in Sources */,
 				6DA8BC5919FBD09400334FE6 /* AppDelegate.m in Sources */,
 				6D3F86811A05BD26008EA957 /* ViewController.mm in Sources */,
-				6D3F86801A05BD26008EA957 /* UIDDrawingViewController.m in Sources */,
+				6D3F86801A05BD26008EA957 /* UIDDrawingViewController.mm in Sources */,
 				6DA8BC5619FBD09400334FE6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,7 +489,26 @@
 					MS,
 					CS/Fall,
 					"2014/CS6454/GradProject/iOSCode/OpenCV-iOS",
+					/Users/ml/Google,
+					Drive/Georgia,
+					Tech,
+					MS,
+					CS/Fall,
+					"2014/CS6454/GradProject/iOSCode/OpenCV-iOS",
+					/Users/ml/Google,
+					Drive/Georgia,
+					Tech,
+					MS,
+					CS/Fall,
+					"2014/CS6454/GradProject/iOSCode/OpenCV-iOS",
+					/Users/ml/Google,
+					Drive/Georgia,
+					Tech,
+					MS,
+					CS/Fall,
+					"2014/CS6454/GradProject/iOSCode/OpenCV-iOS",
 				);
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = UserInterfaceDesignRunning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -490,7 +534,26 @@
 					MS,
 					CS/Fall,
 					"2014/CS6454/GradProject/iOSCode/OpenCV-iOS",
+					/Users/ml/Google,
+					Drive/Georgia,
+					Tech,
+					MS,
+					CS/Fall,
+					"2014/CS6454/GradProject/iOSCode/OpenCV-iOS",
+					/Users/ml/Google,
+					Drive/Georgia,
+					Tech,
+					MS,
+					CS/Fall,
+					"2014/CS6454/GradProject/iOSCode/OpenCV-iOS",
+					/Users/ml/Google,
+					Drive/Georgia,
+					Tech,
+					MS,
+					CS/Fall,
+					"2014/CS6454/GradProject/iOSCode/OpenCV-iOS",
 				);
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = UserInterfaceDesignRunning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
